@@ -1,7 +1,5 @@
 .shop_category {
-  height: 100vh;
   background: linear-gradient(180dg, #e29910 0%, #d6b80dc5 60%);
-  /* display: flex; */
 }
 .category_banner {
   flex: 1;

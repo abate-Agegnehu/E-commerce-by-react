@@ -8,7 +8,9 @@ import LoginSignup from "./pages/LoginSignup";
 import men_banner from "./components/assets/men_banner.png";
 import women_banner from "./components/assets/women_banner.png";
 import kid_banner from "./components/assets/kid_banner.png";
-import "./App.css"
+import "./App.css";
+import Footer from "./components/Footer/Footer";
+
 function App() {
   return (
     <div className="App">
@@ -28,12 +30,11 @@ function App() {
             path="/kids"
             element={<ShopCategory banner={kid_banner} category="kid" />}
           />
-          <Route path="/product" element={<Product />}>
-            <Route path=":productId" element={<Product />} />
-          </Route>
+          <Route path="/product/:productId" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

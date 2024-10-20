@@ -3,7 +3,6 @@ import "./CSS/ShopCategory.css";
 import { ShopContext } from "../context/ShopContext";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import Item from "../components/item/Item";
-import Footer from "../components/Footer/Footer"
 const ShopCategory = (props) => {
   const { all_product } = useContext(ShopContext);
 
@@ -54,7 +53,6 @@ const ShopCategory = (props) => {
 </div>
 
 
-      <Footer/>
     </div>
   );
 };

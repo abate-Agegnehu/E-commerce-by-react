@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../components/Footer/Footer";
 import "./CSS/LoginSignup.css"
 const LoginSignup = () => {
   return (
@@ -20,7 +19,6 @@ const LoginSignup = () => {
           <p>By continuing, i agree to use the terms of use and policy.</p>
         </div>
       </div>
-      <Footer/>
     </div>
   );
 };
